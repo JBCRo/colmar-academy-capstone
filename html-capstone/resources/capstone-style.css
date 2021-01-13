@@ -1,5 +1,7 @@
 /*Universal Styles */
-
+body {
+    margin:0;
+}
 h1 {
     font-size: 64px;
     color: darkslategray;
@@ -26,16 +28,18 @@ h4{
 }
 
 h5 {
-    font-size: 14px;
+    font-size: 18px;
     color: black;
     font-family: calibri;
+    font-weight: normal;
 }
 
 p {
-    font-size: 16px;
+    font-size: 24px;
     color: black;
     font-weight: lighter;
     font-family: Calibri;
+    font-weight: lighter;
 }
 
 a {
@@ -52,6 +56,9 @@ a {
     width: 100%;
     justify-content: space-between;
     height: 64px;
+    position: fixed;
+    z-index: 0;
+    background-color: white;
 }
 
 .header-nav .logo {
@@ -82,23 +89,23 @@ a {
     padding-left: 16px;
 }
 
-/* Spotlight content */
-.spotlight {
+/* banner content */
+.banner {
     background-color: lightgrey;
     display: flex;
 }
 
-.spotlight img{
+.banner img{
     width: 60%;
-    height: auto;
     margin: 32px 24px;
 }
 
-.spotlight .CTA {
+.banner .CTA {
     align-self: center;
+    margin-left: 24px;
 }
 
-.spotlight .CTA button {
+.banner .CTA button {
     background-color: darkslategray;
     border: none;
     color:white;
@@ -107,4 +114,98 @@ a {
     font-size: 24px;
     padding-top: 8px;
     padding-bottom: 8px;
+}
+
+/* Information content */
+
+.information {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.information .spotlight {
+    margin: 32px 24px;
+    width: 60%;
+}
+
+.information .spotlight img {
+    width: 100%;
+}
+
+.information .spotlight .caption {
+
+}
+
+.information .sidebar{
+    width: 40%;
+    justify-self: right;
+    padding: 32px 16px;
+    justify-self: flex-end;
+    border: 2px solid lightgray;
+    border-top: none;
+    border-bottom: none;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.information .orientation {
+    display: flex;
+    border-bottom: 2px solid lightgray;
+}
+
+.information .campus {
+    display: flex;
+    border-bottom: 2px solid lightgray;
+}
+
+.information .guest {
+    display: flex;
+    background-color: lightgray;
+}
+.information .sidebar .orientation img{
+    display: block;
+    width: 35%;
+    height: auto;
+    padding: 16px 16px;
+}
+
+.information .sidebar .campus img{
+    display: block;
+    width: 35%;
+    height: auto;
+    padding: 16px 16px;
+}
+
+.information .sidebar .guest img{
+    display: block;
+    width: 35%;
+    height: auto;
+    padding: 16px 16px;
+}
+
+.information .sidebar .orientation .text {
+    flex-direction: column;
+    width: 65%;
+    padding: 8px 8px;
+    border: none;
+}
+
+.information .sidebar .campus .text {
+    flex-direction: column;
+    width: 65%;
+    border: none;
+}
+
+.information .sidebar .guest .text {
+    flex-direction: column;
+    width: 65%;
+    border: none;
+}
+
+/* Start Learning style */
+
+.start-learning {
+    background-color: lightslategray;
+
 }
