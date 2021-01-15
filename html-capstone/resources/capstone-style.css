@@ -107,6 +107,10 @@ a {
     .header-nav .logo {
         display: none;
     }
+    
+    .header-nav .nav-bar {
+        display: none;
+    }
 
     .header-nav .mobile-nav-bar {
         display: flex;
