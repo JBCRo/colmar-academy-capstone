@@ -58,6 +58,8 @@ a {
 
 /*Header and Nav Bar */
 
+
+
 .header-nav {
     display: flex;
     width: 100%;
@@ -67,33 +69,67 @@ a {
     z-index: 0;
     background-color: white;
 }
+@media only screen and (min-width:600px) {
+    .header-nav .logo {
+        display: flex;
+    }
 
-.header-nav .logo {
-    display: flex;
+    .header-nav .logo p {
+        font-size: 24px;
+        color: black;
+        text-transform: uppercase;
+        font-family: calibri;
+        font-weight: lighter;
+        align-self: center;
+    }
+
+    .header-nav .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 24px;
+        align-self: center;
+    }
+
+    .header-nav .nav-bar a {
+        font-size: 18px;
+        color: gray;
+        font-family: calibri;
+        text-decoration: none;
+        padding-left: 16px;
+    }
 }
 
-.header-nav .logo p {
-    font-size: 24px;
-    color: black;
-    text-transform: uppercase;
-    font-family: calibri;
-    font-weight: lighter;
-    align-self: center;
-}
+@media only screen and (max-width:600px) {
+    .header-nav .logo {
+        display: flex;
+    }
+    
+    .header-nav .logo p {
+        display: none;
+    }
+    .header-nav .logo p {
+        font-size: 24px;
+        color: black;
+        text-transform: uppercase;
+        font-family: calibri;
+        font-weight: lighter;
+        align-self: center;
+    }
 
-.header-nav .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 24px;
-    align-self: center;
-}
+    .header-nav .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 24px;
+        align-self: center;
+    }
 
-.header-nav .nav-bar a {
-    font-size: 18px;
-    color: gray;
-    font-family: calibri;
-    text-decoration: none;
-    padding-left: 16px;
+    .header-nav .nav-bar a {
+        font-size: 18px;
+        color: gray;
+        font-family: calibri;
+        text-decoration: none;
+        padding-left: 16px;
+    }
 }
 
 /* banner content */
@@ -353,3 +389,7 @@ a {
 .footer .terms {
     
 }
+
+/*mobile adaptations start here :( */
+
+/*mobile navbar*/
