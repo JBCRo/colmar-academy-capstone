@@ -3,6 +3,7 @@ body {
     margin:0;
     overflow-x: hidden;
 }
+
 h1 {
     font-size: 64px;
     color: darkslategray;
@@ -48,6 +49,11 @@ a {
     color: blue;
     font-family: calibri;
     text-decoration: none;
+}
+
+.title {
+    text-align: center;
+    padding: 32px 32px;
 }
 
 /*Header and Nav Bar */
@@ -211,11 +217,7 @@ a {
     max-width: 100%;
 }
 
-.start-learning .title {
-    text-align: center;
-    padding: 32px 32px;
 
-}
 
 .start-learning .all-courses {
     display: flex;
@@ -246,4 +248,108 @@ a {
     margin-left: 16px;
     margin-top: 16px;
     max-width: 100%;
+}
+
+/* Thesis exhibit content */
+
+.thesis-exhibit {
+}
+
+.thesis-section {
+    display: flex;
+    justify-self: flex-end;
+
+}
+
+.video-and-caption {
+    max-width: 60%;
+    padding-left: 24px;
+}
+
+.thesis-exhibit .video {
+    padding-right: 24px;
+    padding-bottom: 24px;
+    max-width: 100%;
+    height: auto;
+}
+.thesis-exhibit video {
+    max-width: 100%;
+}
+
+.thesis-exhibit .caption {
+}
+
+.thesis-exhibit .sidebar {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.thesis-img {
+    width: 35%
+}
+
+.thesis-img img {
+    width: 100%;
+}
+
+.fisma {
+    background-color: lightgray;
+    display: flex;
+}
+
+.now-then{
+    display: flex;
+}
+
+.fisma .fisma-img {
+    width: 35%;
+    padding: 16px 16px;
+}
+
+.fisma .fisma-img img {
+    width: 100%
+}
+.now-then .now-then-img {
+    width: 35%;
+    padding: 16px 16px;
+}
+
+.now-then .now-then-img img {
+    width: 100%;
+}
+
+.fisma .fisma-txt {
+    align-self: center;
+}
+
+.now-then .now-then-txt {
+    align-self: center;
+}
+
+/* footer style */
+
+.footer {
+    border-top: 2px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding-top: 16px;
+    padding-left: 16px;
+    
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+.footer a {
+    color: gray;
+    align-self: center;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.footer .terms {
+    
 }
