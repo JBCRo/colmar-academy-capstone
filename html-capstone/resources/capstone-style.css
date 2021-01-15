@@ -1,6 +1,7 @@
 /*Universal Styles */
 body {
     margin:0;
+    overflow-x: hidden;
 }
 h1 {
     font-size: 64px;
@@ -224,20 +225,25 @@ a {
     margin-left:72px;
     margin-right: 72px;
     padding-bottom: 32px;
-    max-width: 100%;
+    width: 100%;
 }
 
 .start-learning .courses {
     background-color: white;
     margin: 32px;
-    
+    max-width: 27%;
 }
 
 .start-learning .courses img {
+    max-width: 100%
 }
 
-.start-learning .text {
-    padding-left: 16px;
-    padding-top: 16px;
+.start-learning .image-container {
+    max-width: 100%;
+}
+
+.start-learning .image-container .text {
+    margin-left: 16px;
+    margin-top: 16px;
     max-width: 100%;
 }
