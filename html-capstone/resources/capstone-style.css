@@ -69,6 +69,7 @@ a {
     z-index: 0;
     background-color: white;
 }
+
 @media screen and (min-width: 600px) {
     .header-nav .logo {
         display: flex;
@@ -104,9 +105,10 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-    .header-nav .logo {
+    .header-nav .logo img{
         display: none;
     }
+
     
     .header-nav .nav-bar {
         display: none;
