@@ -120,6 +120,7 @@ a {
         padding-right: 24px;
         align-self: center;
         width: 100%;
+        height: 64px;
     }
 }
 
@@ -137,6 +138,7 @@ a {
 .banner .CTA {
     align-self: center;
     margin-left: 24px;
+    flex-shrink: 2;
 }
 
 .banner .CTA button {
@@ -148,6 +150,37 @@ a {
     font-size: 24px;
     padding-top: 8px;
     padding-bottom: 8px;
+}
+
+@media screen and (max-width: 600px) {
+    .banner {
+        display: block;
+        padding-top: 64px;
+        width: 100%;
+    }
+
+    .banner img {
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .banner .CTA {
+        max-width: 100%;
+        min-width: 300px;
+    }
+
+    .banner .CTA button {
+        margin: 16px 16px;
+    }
+
+    .banner .CTA h1 {
+        font-size: 3rem;
+    }
+
+    .banner .CTA h2 {
+        font-size: 2rem;
+    }
 }
 
 /* Information content */
