@@ -344,6 +344,15 @@ a {
 
 @media screen and (max-width: 600px) {
 
+    .start-learning {
+        background-color: white;
+        border-top: 1px solid lightgray
+    }
+
+    .start-learning .title {
+        padding-bottom: 0px;
+    }
+
     .start-learning img {
         display: none;
     }
@@ -355,12 +364,27 @@ a {
     .start-learning .all-courses {
         display: flex;
         flex-direction: column;
-        align-content: center;
-        flex-wrap: unset;
+        align-content: space-around;
+        margin: 0px 0px;
     }
 
     .start-learning .courses {
-        display: block;
+        max-width: 100%;
+        background-color: lightgray;
+        margin-left: 16px;
+        margin-right: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    #software-engineering {
+        padding-right: 40px;
+    }
+
+    .start-learning .image-container {
+    }
+
+    .start-learning .image-container .text {
     }
 }
 
@@ -441,6 +465,29 @@ a {
     align-self: center;
 }
 
+
+@media screen and (max-width: 600px) {
+    .thesis-exhibit {
+        border-top: 1px solid lightgray
+    }
+
+    .thesis-exhibit .sidebar {
+        display: none;
+    }
+
+    .thesis-exhibit .video-and-caption {
+        max-width: 100%;
+    }
+
+    .thesis-exhibit .video-and-caption .video {
+        max-width: 100%;
+    }
+
+    .thesis-exhibit .video-and-caption .caption {
+        display: none;
+    }
+}
+
 /* footer style */
 
 .footer {
@@ -468,6 +515,8 @@ a {
     
 }
 
-/*mobile adaptations start here :( */
-
-/*mobile navbar*/
+@media screen and (max-width: 600px){
+    .footer .terms {
+        display: none;
+    }
+}
