@@ -276,6 +276,34 @@ a {
     border: none;
 }
 
+@media screen and (max-width: 600px) {
+    .spotlight {
+        display: none;
+    }
+
+    .information .sidebar {
+        width: 100%;
+        border: none;
+    }
+
+    .information .sidebar .orientation {
+        width: 100%;
+        border-bottom: none;
+    }
+
+    .information .sidebar .campus {
+        width: 100%;
+        border: none;
+    }
+
+    .information .sidebar .guest {
+        width: 100%;
+        border: none;
+        background-color: white;
+    }
+
+}
+
 /* Start Learning style */
 
 .start-learning {
