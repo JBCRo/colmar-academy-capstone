@@ -311,8 +311,6 @@ a {
     max-width: 100%;
 }
 
-
-
 .start-learning .all-courses {
     display: flex;
     flex-direction: row;
@@ -342,6 +340,28 @@ a {
     margin-left: 16px;
     margin-top: 16px;
     max-width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+
+    .start-learning img {
+        display: none;
+    }
+
+    .start-learning p {
+        display: none;
+    }
+
+    .start-learning .all-courses {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: unset;
+    }
+
+    .start-learning .courses {
+        display: block;
+    }
 }
 
 /* Thesis exhibit content */
