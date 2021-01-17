@@ -145,11 +145,13 @@ a {
     background-color: darkslategray;
     border: none;
     color:white;
-    width: 100%;
+    max-width: 100%;
+    min-width: 70%;
     font-family: calibri;
     font-size: 24px;
     padding-top: 8px;
     padding-bottom: 8px;
+    flex-shrink: 5;
 }
 
 @media screen and (max-width: 1000px) {
@@ -238,7 +240,9 @@ a {
 }
 .information .sidebar .orientation img{
     display: block;
-    width: 35%;
+    max-width: 35%;
+    max-height: 100%;
+    width: auto;
     height: auto;
     padding: 16px 16px;
 }
@@ -284,24 +288,61 @@ a {
     .information .sidebar {
         width: 100%;
         border: none;
+        display: flex;
+        flex-direction: column;
     }
 
     .information .sidebar .orientation {
         width: 100%;
         border-bottom: none;
+        display: flex;
+        flex-direction: column;
     }
 
     .information .sidebar .campus {
         width: 100%;
         border: none;
+        display: flex;
+        flex-direction: column;
     }
 
     .information .sidebar .guest {
         width: 100%;
         border: none;
         background-color: white;
+        display: flex;
+        flex-direction: column;
     }
 
+    .information .sidebar .orientation img {
+        max-width: 100%;
+        max-height: 50%;
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        overflow: hidden;
+        align-self: center;
+    }
+
+    .information .sidebar .campus img {
+        max-width: 100%;
+        max-height: 50%;
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        overflow: hidden;
+        align-self: center;
+    }
+
+    .information .sidebar .guest img {
+        max-width: 100%;
+        max-height: 50%;
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        overflow: hidden;
+        align-self: center;
+    }
 }
 
 /* Start Learning style */
