@@ -152,7 +152,7 @@ a {
     padding-bottom: 8px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .banner {
         display: flex;
         flex-direction: column;
@@ -276,7 +276,7 @@ a {
     border: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .spotlight {
         display: none;
     }
@@ -342,7 +342,7 @@ a {
     max-width: 100%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
 
     .start-learning {
         background-color: white;
@@ -466,7 +466,7 @@ a {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .thesis-exhibit {
         border-top: 1px solid lightgray
     }
@@ -515,7 +515,7 @@ a {
     
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1000px){
     .footer .terms {
         display: none;
     }
