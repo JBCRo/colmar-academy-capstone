@@ -154,7 +154,8 @@ a {
 
 @media screen and (max-width: 600px) {
     .banner {
-        display: block;
+        display: flex;
+        flex-direction: column;
         padding-top: 64px;
         width: 100%;
     }
@@ -166,12 +167,17 @@ a {
     }
 
     .banner .CTA {
+        display: flex;
+        flex-direction: column;
         max-width: 100%;
         min-width: 300px;
+        align-content: center;
     }
 
     .banner .CTA button {
         margin: 16px 16px;
+        align-self: center;
+        justify-self: center;
     }
 
     .banner .CTA h1 {
